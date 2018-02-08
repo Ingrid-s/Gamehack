@@ -14,6 +14,7 @@ function addElement() {
 
 
     /*Método jquery para publicar comentarios uno encima de otro sin que desaparezcan */
+    /*crear los elementos el div row col a e img, despues darles atributos y luego anidarlos*/
 
     $('#post').click(subirImagen);
 
@@ -33,6 +34,8 @@ function addElement() {
         $('.caption').attr('src', " ")
       }
     }
+
+    $('.colection').append('<>¡Felicidades! Has insertado un texto en el div</h2>');
 
 
 
@@ -100,5 +103,3 @@ function paintComments (commentObj){
 
 
 $(document).ready(loadPage);
-
-
